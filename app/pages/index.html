@@ -725,71 +725,85 @@
   </div>
 </div>
 
-
-<div class="popup popup__firststep">
-  <div class="popup__title">
-    Хочу участвовать
-    <a href="#" class="popup__close">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-  <div class="popup__content">
-    <div class="popup__content__text">
-      Чтобы сгенерировать промокод, напишите ваш аккаунт в Инстаграме через @. Например, <span>@alexandramitroshina</span>.
-    </div>
-    <form class="popup__form">
-      <input type="text" name="instalink" class="popup__input" value="@" placeholder="@">
-      <input type="submit" class="popup__submit" value="Далее">
-    </form>
-  </div>
-</div>
-
-
-<div class="popup popup__secondstep">
-  <div class="popup__title">
-    Хочу участвовать
-    <a href="#" class="popup__close">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-  <div class="popup__content">
-    <div class="popup__content__text">
-      Скопируйте сообщение ниже, нажмите на кнопку "Написать организатору" и отправьте туда ваше сообщение.
-    </div>
-    <div class="popup__content__inborder">
-      Здравствуйте. Хочу поучаствовать в giveaway за 13 500 рублей по промокоду <span id="text" class="copy__code">f0fmC4b7PXnR</span> (действителен до 18.06 включительно)
-      <br><br>
-      Мой аккаунт — <a href="https://instagram.com/asdfa" target="_blank">https://instagram.com/asdfa</a>
-    </div>
-    <div class="popup__buttons flex">
-      <div onclick="copyToClipboard('#text')" class="copy__button">
-        Скопировать
+<div class="popup__container popup__firststep">
+  <div class="popup__inner">
+    <div class="popup popup__firststep">
+      <div class="popup__title">
+        Хочу участвовать
+        <a href="#" class="popup__close">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
-      <a href="#" class="sign__button">
-        Написать организатору
-      </a>
+      <div class="popup__content">
+        <div class="popup__content__text">
+          Чтобы сгенерировать промокод, напишите ваш аккаунт в Инстаграме через @. Например, <span>@alexandramitroshina</span>.
+        </div>
+        <form class="popup__form">
+          <input type="text" name="instalink" class="popup__input" value="@" placeholder="@">
+          <input type="submit" class="popup__submit" value="Далее">
+        </form>
+      </div>
     </div>
+    <div class="popups__overlay"></div>
   </div>
 </div>
 
 
-<div class="popup popup__present">
-  <div class="popup__title">
-    Подарки
-    <a href="#" class="popup__close">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
+<div class="popup__container popup__secondstep">
+  <div class="popup__inner">
+    <div class="popup">
+      <div class="popup__title">
+        Хочу участвовать
+        <a href="#" class="popup__close">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="popup__content">
+        <div class="popup__content__text">
+          Скопируйте сообщение ниже, нажмите на кнопку "Написать организатору" и отправьте туда ваше сообщение.
+        </div>
+        <div class="popup__content__inborder">
+          Здравствуйте. Хочу поучаствовать в giveaway за 13 500 рублей по промокоду <span id="text" class="copy__code">f0fmC4b7PXnR</span> (действителен до 18.06 включительно)
+          <br><br>
+          Мой аккаунт — <a href="https://instagram.com/asdfa" target="_blank">https://instagram.com/asdfa</a>
+        </div>
+        <div class="popup__buttons flex">
+          <div onclick="copyToClipboard('#text')" class="copy__button">
+            Скопировать
+          </div>
+          <a href="#" class="sign__button">
+            Написать организатору
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="popups__overlay"></div>
   </div>
-  <div class="popup__content popup__content-presents"></div>
 </div>
 
-<div class="popups__overlay"></div>
+
+<div class="popup__container popup__present">
+  <div class="popup__inner">
+    <div class="popup">
+      <div class="popup__title">
+        Подарки
+        <a href="#" class="popup__close">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.5" d="M1 1L11 11M11 1L1 11" stroke="#6A7B83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="popup__content popup__content-presents"></div>
+    </div>
+    <div class="popups__overlay"></div>
+  </div>
+</div>
+
+
 
 
 

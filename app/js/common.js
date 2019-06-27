@@ -6,9 +6,8 @@ $(function () {
         var windowTop = $(window).scrollTop();
 
         $('body').attr('data-top', windowTop);
-        $('.popup').hide();
-        $('.popup__firststep').show();
-        $('.popups__overlay').fadeIn('500');
+        $('.popup__container').hide();
+        $('.popup__firststep').fadeIn(500);
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
 
         $('body').scrollTop(windowTop);
@@ -18,9 +17,8 @@ $(function () {
     $('.popup__submit').click(function (e) {
         e.preventDefault();
 
-        $('.popup').hide();
+        $('.popup__container').hide();
         $('.popup__secondstep').show();
-        $('.popups__overlay').fadeIn('500');
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
     });
 
@@ -29,8 +27,7 @@ $(function () {
 
         var windowTop = $('body').attr('data-top');
 
-        $('.popups__overlay').fadeOut('500');
-        $('.popup').fadeOut('500');
+        $('.popup__container').fadeOut('500');
         $('html, body').css({'overflow' : 'visible', 'position' : 'relative'});
 
         $(window).scrollTop(windowTop);
@@ -44,9 +41,8 @@ $(function () {
         var windowTop = $(window).scrollTop();
 
         $('body').attr('data-top', windowTop);
-        $('.popup').hide();
-        $('.popup__present').show();
-        $('.popups__overlay').fadeIn('500');
+        $('.popup__container').hide();
+        $('.popup__present').fadeIn(500);
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
 
         $('body').scrollTop(windowTop);
