@@ -5,10 +5,13 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
+        $('body').scrollTop(windowTop);
+
         $('body').attr('data-top', windowTop);
         $('.popup__container').hide();
-        $('.popup__firststep').fadeIn(500);
+        $('.popup__firststep').show();
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+        $('body').css({'padding-right' : $.scrollbarWidth()});
 
         $('body').scrollTop(windowTop);
 
@@ -27,8 +30,9 @@ $(function () {
 
         var windowTop = $('body').attr('data-top');
 
-        $('.popup__container').fadeOut('500');
+        $('.popup__container').hide();
         $('html, body').css({'overflow' : 'visible', 'position' : 'relative'});
+        $('body').css({'padding-right' : '0'});
 
         $(window).scrollTop(windowTop);
 
@@ -42,8 +46,9 @@ $(function () {
 
         $('body').attr('data-top', windowTop);
         $('.popup__container').hide();
-        $('.popup__present').fadeIn(500);
+        $('.popup__present').show();
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+        $('body').css({'padding-right' : $.scrollbarWidth()});
 
         $('body').scrollTop(windowTop);
     });
@@ -117,6 +122,9 @@ $(function () {
     //Маска телефона
     $("input[name=instalink]").mask("@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
+
+    $(function(){ console.log($.scrollbarWidth()); });
+
 });
 
 function copyToClipboard(element) {
@@ -126,3 +134,17 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
 }
+
+
+$.scrollbarWidth = function() {
+    var parent, child, width;
+
+    if(width===undefined) {
+        parent = $('<div style="width:50px;height:50px;overflow:auto"><div/></div>').appendTo('body');
+        child=parent.children();
+        width=child.innerWidth()-child.height(99).innerWidth();
+        parent.remove();
+    }
+
+    return width;
+};

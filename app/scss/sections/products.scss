@@ -186,6 +186,7 @@
   margin: 0 auto;
   margin-top: 20px;
   font-size: 14px;
+  padding-top: 1px;
 }
 
 
@@ -270,12 +271,14 @@
   color: #6A7B83;
   font-size: 14px;
   transition: .3s;
+  border-right: none;
 
   &:first-child {
     border-radius: 5px 0px 0px 5px;
   }
   &:last-child {
     border-radius: 0px 5px 5px 0px;
+    border-right: 1px solid #D5DFE4;
   }
 
   &:hover {
