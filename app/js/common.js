@@ -5,8 +5,6 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('body').scrollTop(windowTop);
-
         $('body').attr('data-top', windowTop);
         $('.popup__container').hide();
         $('.popup__firststep').show();
@@ -44,7 +42,6 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('body').attr('data-top', windowTop);
         $('.popup__container').hide();
         $('.popup__present').show();
         $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
