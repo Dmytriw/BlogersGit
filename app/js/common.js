@@ -5,13 +5,17 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('body').attr('data-top', windowTop);
-        $('.popup__container').hide();
-        $('.popup__firststep').show();
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
-        $('body').css({'padding-right' : $.scrollbarWidth()});
+        setTimeout(function () {
+            $('body').attr('data-top', windowTop);
+            $('.popup__container').hide();
+            $('.popup__firststep').show();
+            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+            $('body').css({'padding-right' : $.scrollbarWidth()});
 
-        $('body').scrollTop(windowTop);
+            var windowTopData = $('body').attr('data-top');
+
+            $('body').scrollTop(windowTopData);
+        }, 50);
 
     });
 
@@ -42,12 +46,16 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('.popup__container').hide();
-        $('.popup__present').show();
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
-        $('body').css({'padding-right' : $.scrollbarWidth()});
+        setTimeout(function () {
+            $('.popup__container').hide();
+            $('.popup__present').show();
+            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+            $('body').css({'padding-right' : $.scrollbarWidth()});
 
-        $('body').scrollTop(windowTop);
+            var windowTopData = $('body').attr('data-top');
+
+            $('body').scrollTop(windowTopData);
+        }, 50);
     });
 
     $('.presents').click(function (e) {
@@ -69,11 +77,15 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('body').attr('data-top', windowTop);
-        $('.header__nav__container').addClass('openedNav');
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+        setTimeout(function () {
+            $('body').attr('data-top', windowTop);
+            $('.header__nav__container').addClass('openedNav');
+            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
 
-        $('body').scrollTop(windowTop);
+            var windowTopData = $('body').attr('data-top');
+
+            $('body').scrollTop(windowTopData);
+        }, 50);
     });
 
     $('.vav__close, .nav__overlay').click(function (e) {
@@ -96,11 +108,15 @@ $(function () {
 
         var windowTop = $(window).scrollTop();
 
-        $('body').attr('data-top', windowTop);
-        $('.filter__container').addClass('openedFilter');
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+        setTimeout(function () {
+            $('body').attr('data-top', windowTop);
+            $('.filter__container').addClass('openedFilter');
+            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
 
-        $('body').scrollTop(windowTop);
+            var windowTopData = $('body').attr('data-top');
+
+            $('body').scrollTop(windowTopData);
+        }, 50);
     });
 
     $('.filter__close, .filter__overlay').click(function (e) {
@@ -121,6 +137,15 @@ $(function () {
 
 
     $(function(){ console.log($.scrollbarWidth()); });
+
+
+    const targetElement = document.getElementById("popup"); //only popup can scroll
+
+//put this when popup opens, to stop body scrolling
+    bodyScrollLock.disableBodyScroll(targetElement);
+
+//put this when close popup and show scrollbar in body
+    bodyScrollLock.enableBodyScroll(targetElement);
 
 });
 
@@ -145,3 +170,6 @@ $.scrollbarWidth = function() {
 
     return width;
 };
+
+
+
