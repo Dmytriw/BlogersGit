@@ -1,20 +1,42 @@
 $(function () {
+    var
+        w = $(window).width();
+
+    $('.popup__container').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
+
+
+    // $('.product__button').click(function (e) {
+    //     e.preventDefault();
+    //
+    //     var windowTop = $(window).scrollTop();
+    //
+    //     setTimeout(function () {
+    //         $('body').attr('data-top', windowTop);
+    //         $('.popup__container').hide();
+    //         $('.popup__firststep').show();
+    //         $('body').css({'padding-right' : $.scrollbarWidth()});
+    //
+    //         var windowTopData = $('body').attr('data-top');
+    //
+    //         if(w > 680) {
+    //             $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
+    //             $('body').scrollTop(windowTopData);
+    //         }
+    //     }, 50);
+    //
+    // });
+
 
     $('.product__button').click(function (e) {
         e.preventDefault();
 
-        var windowTop = $(window).scrollTop();
-
         setTimeout(function () {
-            $('body').attr('data-top', windowTop);
             $('.popup__container').hide();
             $('.popup__firststep').show();
-            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
-            $('body').css({'padding-right' : $.scrollbarWidth()});
-
-            var windowTopData = $('body').attr('data-top');
-
-            $('body').scrollTop(windowTopData);
         }, 50);
 
     });
@@ -24,19 +46,12 @@ $(function () {
 
         $('.popup__container').hide();
         $('.popup__secondstep').show();
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
     });
 
     $('.popups__overlay, .popup__close').click(function (e) {
         e.preventDefault();
 
-        var windowTop = $('body').attr('data-top');
-
         $('.popup__container').hide();
-        $('html, body').css({'overflow' : 'visible', 'position' : 'relative'});
-        $('body').css({'padding-right' : '0'});
-
-        $(window).scrollTop(windowTop);
 
     });
 
@@ -44,17 +59,10 @@ $(function () {
     $('.presents').click(function (e) {
         e.preventDefault();
 
-        var windowTop = $(window).scrollTop();
 
         setTimeout(function () {
             $('.popup__container').hide();
             $('.popup__present').show();
-            $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
-            $('body').css({'padding-right' : $.scrollbarWidth()});
-
-            var windowTopData = $('body').attr('data-top');
-
-            $('body').scrollTop(windowTopData);
         }, 50);
     });
 
@@ -67,7 +75,6 @@ $(function () {
             thisPaste = thisItem.find('.present__hidden').html();
 
         $('.popup__content-presents').html(thisPaste);
-        $('html, body').css({'overflow' : 'hidden', 'position' : 'fixed'});
     });
 
 
@@ -136,9 +143,6 @@ $(function () {
     $("input[name=instalink]").mask("@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
 
-    $(function(){ console.log($.scrollbarWidth()); });
-
-
     const targetElement = document.getElementById("popup"); //only popup can scroll
 
 //put this when popup opens, to stop body scrolling
@@ -156,20 +160,6 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
 }
-
-
-$.scrollbarWidth = function() {
-    var parent, child, width;
-
-    if(width===undefined) {
-        parent = $('<div style="width:50px;height:50px;overflow:auto"><div/></div>').appendTo('body');
-        child=parent.children();
-        width=child.innerWidth()-child.height(99).innerWidth();
-        parent.remove();
-    }
-
-    return width;
-};
 
 
 
