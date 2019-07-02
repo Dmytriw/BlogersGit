@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 4">
-      <change afterPath="$PROJECT_DIR$/app/libs/scroll-lock./scroll-lock.js" afterDir="false" />
+    <list default="true" id="3e13581c-f3ad-4fff-9204-4d85cc227bbb" name="Default" comment="Правка 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/modules/accordeon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/modules/scrolling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/maps/custom.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/vendor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/vendor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/scroll-lock./scroll-lock.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -702,11 +695,11 @@
     <session id="-1476593704">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -737,7 +730,7 @@
           <entry key="php" value="43" />
           <entry key="scss" value="266" />
           <entry key="tpl" value="62" />
-          <entry key="txt" value="10" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -746,7 +739,7 @@
           <entry key="HTML" value="67" />
           <entry key="JavaScript" value="432" />
           <entry key="PHP" value="43" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="SCSS" value="266" />
           <entry key="Smarty" value="62" />
         </counts>
@@ -1500,35 +1493,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1017">
-              <caret line="161" column="1" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="787" column="28" selection-start-line="787" selection-start-column="12" selection-end-line="787" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1731,7 +1696,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="490" />
     <option name="y" value="405" />
     <option name="width" value="1370" />
@@ -1783,13 +1748,6 @@
               <item name="BlogersGit" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlogersGit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlogersGit" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="scroll-lock" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BlogersGit" type="b2602c69:ProjectViewProjectNode" />
@@ -2426,7 +2384,8 @@
       <workItem from="1561642413011" duration="833000" />
       <workItem from="1561646052965" duration="9732000" />
       <workItem from="1561791369356" duration="14397000" />
-      <workItem from="1561981940440" duration="2200000" />
+      <workItem from="1561981940440" duration="3440000" />
+      <workItem from="1562059458171" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Правка">
       <created>1561646159268</created>
@@ -2484,11 +2443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561793318337</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Правка 5">
+      <created>1561984672874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561984672874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5239201000" />
+    <option name="totallyTimeSpent" value="5241040000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2500,10 +2466,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.17315437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.17516778" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -2538,7 +2503,8 @@
     <MESSAGE value="Правка 2" />
     <MESSAGE value="Правка 3" />
     <MESSAGE value="Правка 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка 4" />
+    <MESSAGE value="Правка 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24974/public_html/wp-content/themes/vg/page-contact.php" />
@@ -2554,13 +2520,7 @@
     <entry file="file://$PROJECT_DIR$/app/pages/reviews.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp52984/public_html/wp-content/themes/vg/footer.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49349/public_html/wp-content/themes/vg/header.php" />
-    <entry file="file://$PROJECT_DIR$/app/js/modules/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/modules/form.js" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/review__popup.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/about__second.scss" />
     <entry file="file://$PROJECT_DIR$/app/scss/sections/section__second.scss" />
@@ -2644,13 +2604,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp27009/theme/default/template/product/product.tpl" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp24161/www.gaboarchitects.com/wp-content/themes/gabo-architects/single.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01542/www.gaboarchitects.com/wp-content/themes/gabo-architects/single.php" />
-    <entry file="file://$PROJECT_DIR$/app/libs/scroll-lock./scroll-lock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/scroll-lock./scroll-lock.js" />
     <entry file="file://$PROJECT_DIR$/app/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="745">
