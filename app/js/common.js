@@ -138,6 +138,9 @@ $(function () {
 
     });
 
+    scrollCheck();
+    scrolling();
+
 
     //Маска телефона
     $("input[name=instalink]").mask("@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
@@ -161,5 +164,40 @@ function copyToClipboard(element) {
     $temp.remove();
 }
 
+
+
+//Перевірка скролу
+function scrollCheck() {
+    $('.product__content').each(function () {
+        var
+            $this = $(this),
+            thisHeight = $this.find('.product__content__inner').height(),
+            thisContainerHeight = $this.height(),
+            thisScroll = $this.find('.product__scroll');
+
+        if(thisHeight >= thisContainerHeight) {
+            thisScroll.show();
+        } else {
+            thisScroll.hide();
+        }
+    });
+}
+
+
+//Скролінг
+function scrolling() {
+    $('.product__content__overflow').scroll(function () {
+        var
+            $this = $(this),
+            thisHeight = $this.find('.product__content__inner').height(),
+            thisContainerHeight = $this.height(),
+            thisScroll = $this.closest('.product__item').find('.product__scroll'),
+            thisScrollThumb = thisScroll.find('.product__scroll__thumb'),
+            scrollTop = $this.scrollTop(),
+            scrollPos = 100 * scrollTop / (thisHeight - thisContainerHeight);
+
+        thisScrollThumb.css({'top' : scrollPos+'%'});
+    });
+}
 
 
